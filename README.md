@@ -21,7 +21,7 @@ The end results results compared to all recent OIE models look as follows:
 
 DeBERTa and DeBERTaV3 models were found to be harshly worsening the model performance as their pre-trained relative attention does hinder the decoder to predict  even one extraction most of the time. It is hypothesized that the relative embedding of DeBERTa pre-trained on classical NLP data cannot include meaningful relative position information on the OIE task. Instead it would add wrong ot unnecesary information that impaires DetIE.
 
-It was carefully proofen that no incorrect implementation, not the freezing of the 8 bottom encoder layers and not the grid prediction task of DetIE would cause this problem in combination with DeBERTa or DeBERTaV3. DetIE models with DeBERTa encoders were trained with no frozen layers and only 1 and also 5 simoultaneously predicted extraction token labels. Still models with DeBERTa did nealy never yield any extractions, which led to the stated hypothesis.
+It was carefully proofen that no incorrect implementation, not the freezing of the 8 bottom encoder layers and not the grid prediction task of DetIE would cause this problem in combination with DeBERTa or DeBERTaV3. DetIE models with DeBERTa encoders were trained with no frozen layers and only 1 and also 5 simoultaneously predicted extraction token labels. Still models with DeBERTa did nearly never yield any extractions, which led to the stated hypothesis.
 
 ---
 
