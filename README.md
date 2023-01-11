@@ -1,4 +1,4 @@
-# DetIE-with-DeBERTaV3
+# DetIE-with-ELECTRA
 
 This repository contains the measurements and the paper (written in German for [Jugend forscht](https://www.jugend-forscht.de/)) for replacing the BERT-encoder inside the [DetIE](https://arxiv.org/abs/2206.12514) model with the more effective encoders RoBERTa, ELECTRA, DeBERTa and DeBERTaV3. RoBERTa and ELECTRA improved the results for DetIE significantly for multiple benchmarks and train datasets and provided new state of the art performances for half of the benchmarks while not slowing down extraction speed.
 
