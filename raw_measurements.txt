@@ -1,0 +1,754 @@
+[K(DetIEconda) [01;32mhbeyer@mlserv1[00m:[01;34m~/DetIE/modules/modules/model/evaluation/carb-openie6[00m$ bash ./eval.sh
+[?2004l[nltk_data] Downloading package stopwords to /u/hbeyer/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Requirement already satisfied: docopt in /home/hbeyer/anaconda3/envs/DetIEconda/lib/python3.7/site-packages (0.6.2)
+test
+Evaluation of detie999_bert_imojie (ollie format) -------------------
+carb(s,s)
+AUC: 0.2447 Opt: (Pr, Re, F1): (0.6021, 0.3054, 0.4053) 0-Conf (Pr, Re, F1): (0.6021, 0.3054, 0.4053)
+carb(s,m)
+AUC: 0.3641 Opt: (Pr, Re, F1): (0.6021, 0.4546, 0.518) 0-Conf (Pr, Re, F1): (0.6021, 0.4546, 0.518)
+oie16
+AUC: 0.3925054047561854 Optimal (Pr, Re, F1, thr): (0.8695652173913043, 0.4198895027624309, 0.5663189269746647, 1.0)
+wire57
+0it [00:00, ?it/s]1326it [00:00, 398199.12it/s]
+prec/rec/f1: 52.5% 27.9% 0.365
+
+Evaluation of detie666_bert_bs32_imojie_retrain_1 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2405 Opt: (Pr, Re, F1): (0.6087, 0.299, 0.401) 0-Conf (Pr, Re, F1): (0.6087, 0.299, 0.401)
+carb(s,m)
+AUC: 0.3589 Opt: (Pr, Re, F1): (0.6087, 0.4462, 0.515) 0-Conf (Pr, Re, F1): (0.6087, 0.4462, 0.515)
+oie16
+AUC: 0.3887497667232317 Optimal (Pr, Re, F1, thr): (0.8813825608798115, 0.41325966850828727, 0.5626880641925777, 1.0)
+wire57
+0it [00:00, ?it/s]1286it [00:00, 412407.29it/s]
+prec/rec/f1: 53.2% 27.5% 0.363
+
+Evaluation of detie666_bert_bs32_imojie_retrain_2 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2472 Opt: (Pr, Re, F1): (0.5927, 0.3104, 0.4074) 0-Conf (Pr, Re, F1): (0.5927, 0.3104, 0.4074)
+carb(s,m)
+AUC: 0.3698 Opt: (Pr, Re, F1): (0.5927, 0.4643, 0.5207) 0-Conf (Pr, Re, F1): (0.5927, 0.4643, 0.5207)
+oie16
+AUC: 0.3893807636221734 Optimal (Pr, Re, F1, thr): (0.8498141263940521, 0.42099447513812155, 0.5630541871921182, 1.0)
+wire57
+0it [00:00, ?it/s]1359it [00:00, 408138.27it/s]
+prec/rec/f1: 51.1% 28.3% 0.364
+
+Evaluation of detie666_bert_bs32_imojie_retrain_3 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2404 Opt: (Pr, Re, F1): (0.6122, 0.2982, 0.4011) 0-Conf (Pr, Re, F1): (0.6122, 0.2982, 0.4011)
+carb(s,m)
+AUC: 0.3651 Opt: (Pr, Re, F1): (0.6122, 0.4529, 0.5206) 0-Conf (Pr, Re, F1): (0.6122, 0.4529, 0.5206)
+oie16
+AUC: 0.3866079283527466 Optimal (Pr, Re, F1, thr): (0.8861464968152867, 0.40994475138121544, 0.5605640896499622, 1.0)
+wire57
+0it [00:00, ?it/s]1269it [00:00, 402858.90it/s]
+prec/rec/f1: 54.3% 27.4% 0.364
+
+Evaluation of detie666_bert_bs32_imojie_retrain_4 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2406 Opt: (Pr, Re, F1): (0.6109, 0.2986, 0.4012) 0-Conf (Pr, Re, F1): (0.6109, 0.2986, 0.4012)
+carb(s,m)
+AUC: 0.356 Opt: (Pr, Re, F1): (0.6109, 0.4419, 0.5129) 0-Conf (Pr, Re, F1): (0.6109, 0.4419, 0.5129)
+oie16
+AUC: 0.38334508991227106 Optimal (Pr, Re, F1, thr): (0.8786677240285488, 0.40810313075506444, 0.5573440643863179, 1.0)
+wire57
+0it [00:00, ?it/s]1275it [00:00, 431338.73it/s]
+prec/rec/f1: 53.1% 27.3% 0.361
+
+Evaluation of detie999_bert_imojieconj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2933 Opt: (Pr, Re, F1): (0.4553, 0.4031, 0.4276) 0-Conf (Pr, Re, F1): (0.4553, 0.4031, 0.4276)
+carb(s,m)
+AUC: 0.3494 Opt: (Pr, Re, F1): (0.4553, 0.4802, 0.4674) 0-Conf (Pr, Re, F1): (0.4553, 0.4802, 0.4674)
+oie16
+AUC: 0.5375614533905155 Optimal (Pr, Re, F1, thr): (0.7271944922547332, 0.6224677716390423, 0.6707680095256994, 1.0)
+wire57
+0it [00:00, ?it/s]2371it [00:00, 442596.23it/s]
+prec/rec/f1: 39.4% 36.2% 0.377
+
+Evaluation of detie666_bert_bs32_imojie_retrain_1conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2891 Opt: (Pr, Re, F1): (0.4606, 0.3959, 0.4258) 0-Conf (Pr, Re, F1): (0.4606, 0.3959, 0.4258)
+carb(s,m)
+AUC: 0.3446 Opt: (Pr, Re, F1): (0.4606, 0.4719, 0.4662) 0-Conf (Pr, Re, F1): (0.4606, 0.4719, 0.4662)
+oie16
+AUC: 0.5345653588479433 Optimal (Pr, Re, F1, thr): (0.737097485663873, 0.6154696132596685, 0.6708149337615417, 1.0)
+wire57
+0it [00:00, ?it/s]2324it [00:00, 451025.47it/s]
+prec/rec/f1: 39.6% 35.7% 0.375
+
+Evaluation of detie666_bert_bs32_imojie_retrain_2conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2982 Opt: (Pr, Re, F1): (0.4572, 0.4093, 0.4319) 0-Conf (Pr, Re, F1): (0.4572, 0.4093, 0.4319)
+carb(s,m)
+AUC: 0.3573 Opt: (Pr, Re, F1): (0.4572, 0.4904, 0.4732) 0-Conf (Pr, Re, F1): (0.4572, 0.4904, 0.4732)
+oie16
+AUC: 0.54203917629332 Optimal (Pr, Re, F1, thr): (0.7272727272727273, 0.6276243093922652, 0.6737841043890865, 1.0)
+wire57
+0it [00:00, ?it/s]2390it [00:00, 453776.95it/s]
+prec/rec/f1: 39.1% 36.5% 0.377
+
+Evaluation of detie666_bert_bs32_imojie_retrain_3conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2951 Opt: (Pr, Re, F1): (0.4681, 0.4021, 0.4326) 0-Conf (Pr, Re, F1): (0.4681, 0.4021, 0.4326)
+carb(s,m)
+AUC: 0.3504 Opt: (Pr, Re, F1): (0.4681, 0.4773, 0.4727) 0-Conf (Pr, Re, F1): (0.4681, 0.4773, 0.4727)
+oie16
+AUC: 0.5383688479566878 Optimal (Pr, Re, F1, thr): (0.7463218903254569, 0.6165745856353592, 0.6752722872125857, 1.0)
+wire57
+0it [00:00, ?it/s]2287it [00:00, 443004.35it/s]
+prec/rec/f1: 40.9% 36.3% 0.384
+
+Evaluation of detie666_bert_bs32_imojie_retrain_4conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2884 Opt: (Pr, Re, F1): (0.459, 0.3954, 0.4248) 0-Conf (Pr, Re, F1): (0.459, 0.3954, 0.4248)
+carb(s,m)
+AUC: 0.3426 Opt: (Pr, Re, F1): (0.459, 0.4696, 0.4643) 0-Conf (Pr, Re, F1): (0.459, 0.4696, 0.4643)
+oie16
+AUC: 0.520909395376869 Optimal (Pr, Re, F1, thr): (0.7278790573588262, 0.6029465930018416, 0.6595487510072522, 1.0)
+wire57
+0it [00:00, ?it/s]2295it [00:00, 459164.65it/s]
+prec/rec/f1: 39.5% 35.4% 0.374
+
+Evaluation of detie999_roberta_bs32_imojie (ollie format) -------------------
+carb(s,s)
+AUC: 0.2396 Opt: (Pr, Re, F1): (0.6217, 0.2955, 0.4006) 0-Conf (Pr, Re, F1): (0.6217, 0.2955, 0.4006)
+carb(s,m)
+AUC: 0.3574 Opt: (Pr, Re, F1): (0.6217, 0.4408, 0.5158) 0-Conf (Pr, Re, F1): (0.6217, 0.4408, 0.5158)
+oie16
+AUC: 0.38602057472913825 Optimal (Pr, Re, F1, thr): (0.8969155844155844, 0.40699815837937386, 0.5599189257664049, 1.0)
+wire57
+0it [00:00, ?it/s]1243it [00:00, 425072.96it/s]
+prec/rec/f1: 54.1% 27.1% 0.361
+
+Evaluation of detie666_roberta_bs32_imojie_retrain_1 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2445 Opt: (Pr, Re, F1): (0.6038, 0.305, 0.4052) 0-Conf (Pr, Re, F1): (0.6038, 0.305, 0.4052)
+carb(s,m)
+AUC: 0.3629 Opt: (Pr, Re, F1): (0.6038, 0.4526, 0.5174) 0-Conf (Pr, Re, F1): (0.6038, 0.4526, 0.5174)
+oie16
+AUC: 0.38993844925739973 Optimal (Pr, Re, F1, thr): (0.8638783269961977, 0.4184162062615101, 0.5637717121588088, 1.0)
+wire57
+0it [00:00, ?it/s]1330it [00:00, 403765.51it/s]
+prec/rec/f1: 52.6% 27.9% 0.364
+
+Evaluation of detie666_roberta_bs32_imojie_retrain_2 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2479 Opt: (Pr, Re, F1): (0.6139, 0.3072, 0.4095) 0-Conf (Pr, Re, F1): (0.6139, 0.3072, 0.4095)
+carb(s,m)
+AUC: 0.3715 Opt: (Pr, Re, F1): (0.6139, 0.4603, 0.5261) 0-Conf (Pr, Re, F1): (0.6139, 0.4603, 0.5261)
+oie16
+AUC: 0.3952462898029423 Optimal (Pr, Re, F1, thr): (0.8875878220140515, 0.41878453038674035, 0.5690690690690692, 1.0)
+wire57
+0it [00:00, ?it/s]1296it [00:00, 411119.19it/s]
+prec/rec/f1: 53.8% 28.3% 0.371
+
+Evaluation of detie666_roberta_bs32_imojie_retrain_3 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2441 Opt: (Pr, Re, F1): (0.6098, 0.3033, 0.4051) 0-Conf (Pr, Re, F1): (0.6098, 0.3033, 0.4051)
+carb(s,m)
+AUC: 0.3644 Opt: (Pr, Re, F1): (0.6098, 0.4527, 0.5196) 0-Conf (Pr, Re, F1): (0.6098, 0.4527, 0.5196)
+oie16
+AUC: 0.3864758899223722 Optimal (Pr, Re, F1, thr): (0.882120253164557, 0.4106813996316759, 0.5604423221915054, 1.0)
+wire57
+0it [00:00, ?it/s]1277it [00:00, 411851.30it/s]
+prec/rec/f1: 53.5% 27.8% 0.366
+
+Evaluation of detie666_roberta_bs32_imojie_retrain_4 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2441 Opt: (Pr, Re, F1): (0.6066, 0.3038, 0.4049) 0-Conf (Pr, Re, F1): (0.6066, 0.3038, 0.4049)
+carb(s,m)
+AUC: 0.3634 Opt: (Pr, Re, F1): (0.6066, 0.4524, 0.5183) 0-Conf (Pr, Re, F1): (0.6066, 0.4524, 0.5183)
+oie16
+AUC: 0.3979549764987218 Optimal (Pr, Re, F1, thr): (0.8955223880597015, 0.4198895027624309, 0.571715145436309, 1.0)
+wire57
+0it [00:00, ?it/s]1286it [00:00, 415552.77it/s]
+prec/rec/f1: 53.7% 28.1% 0.369
+
+Evaluation of detie999_roberta_bs32_imojieconj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2878 Opt: (Pr, Re, F1): (0.4737, 0.3905, 0.4281) 0-Conf (Pr, Re, F1): (0.4737, 0.3905, 0.4281)
+carb(s,m)
+AUC: 0.3442 Opt: (Pr, Re, F1): (0.4737, 0.4672, 0.4704) 0-Conf (Pr, Re, F1): (0.4737, 0.4672, 0.4704)
+oie16
+AUC: 0.5323035085147574 Optimal (Pr, Re, F1, thr): (0.7538883806038427, 0.6069981583793739, 0.6725158130993676, 1.0)
+wire57
+0it [00:00, ?it/s]2226it [00:00, 334810.32it/s]
+prec/rec/f1: 40.7% 35.0% 0.376
+
+Evaluation of detie666_roberta_bs32_imojie_retrain_1conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2886 Opt: (Pr, Re, F1): (0.4665, 0.3936, 0.4269) 0-Conf (Pr, Re, F1): (0.4665, 0.3936, 0.4269)
+carb(s,m)
+AUC: 0.3493 Opt: (Pr, Re, F1): (0.4665, 0.4764, 0.4714) 0-Conf (Pr, Re, F1): (0.4665, 0.4764, 0.4714)
+oie16
+AUC: 0.533388516646422 Optimal (Pr, Re, F1, thr): (0.7384751773049646, 0.6136279926335175, 0.6702876684771677, 1.0)
+wire57
+0it [00:00, ?it/s]2305it [00:00, 439348.82it/s]
+prec/rec/f1: 40.0% 35.3% 0.375
+
+Evaluation of detie666_roberta_bs32_imojie_retrain_2conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2995 Opt: (Pr, Re, F1): (0.475, 0.4061, 0.4378) 0-Conf (Pr, Re, F1): (0.475, 0.4061, 0.4378)
+carb(s,m)
+AUC: 0.359 Opt: (Pr, Re, F1): (0.475, 0.4867, 0.4808) 0-Conf (Pr, Re, F1): (0.475, 0.4867, 0.4808)
+oie16
+AUC: 0.5395764936805344 Optimal (Pr, Re, F1, thr): (0.7533814247069431, 0.6154696132596685, 0.6774782079870261, 1.0)
+wire57
+0it [00:00, ?it/s]2265it [00:00, 432885.20it/s]
+prec/rec/f1: 41.5% 36.8% 0.390
+
+Evaluation of detie666_roberta_bs32_imojie_retrain_3conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2907 Opt: (Pr, Re, F1): (0.4554, 0.3996, 0.4256) 0-Conf (Pr, Re, F1): (0.4554, 0.3996, 0.4256)
+carb(s,m)
+AUC: 0.3461 Opt: (Pr, Re, F1): (0.4554, 0.4756, 0.4652) 0-Conf (Pr, Re, F1): (0.4554, 0.4756, 0.4652)
+oie16
+AUC: 0.530867693840133 Optimal (Pr, Re, F1, thr): (0.7344233318603623, 0.6121546961325967, 0.6677380474085978, 1.0)
+wire57
+0it [00:00, ?it/s]2308it [00:00, 456194.80it/s]
+prec/rec/f1: 39.5% 35.8% 0.375
+
+Evaluation of detie666_roberta_bs32_imojie_retrain_4conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2913 Opt: (Pr, Re, F1): (0.4664, 0.3973, 0.4291) 0-Conf (Pr, Re, F1): (0.4664, 0.3973, 0.4291)
+carb(s,m)
+AUC: 0.347 Opt: (Pr, Re, F1): (0.4664, 0.4732, 0.4698) 0-Conf (Pr, Re, F1): (0.4664, 0.4732, 0.4698)
+oie16
+AUC: 0.538566452505354 Optimal (Pr, Re, F1, thr): (0.7542986425339366, 0.6139963167587477, 0.6769543147208122, 1.0)
+wire57
+0it [00:00, ?it/s]2255it [00:00, 450817.71it/s]
+prec/rec/f1: 40.6% 35.9% 0.381
+
+Evaluation of detie999_electra_bs32_imojie (ollie format) -------------------
+carb(s,s)
+AUC: 0.2506 Opt: (Pr, Re, F1): (0.6088, 0.3115, 0.4121) 0-Conf (Pr, Re, F1): (0.6088, 0.3115, 0.4121)
+carb(s,m)
+AUC: 0.3699 Opt: (Pr, Re, F1): (0.6088, 0.4599, 0.524) 0-Conf (Pr, Re, F1): (0.6088, 0.4599, 0.524)
+oie16
+AUC: 0.4029505113435994 Optimal (Pr, Re, F1, thr): (0.8829787234042553, 0.4279926335174954, 0.5765318779459191, 1.0)
+wire57
+0it [00:00, ?it/s]1329it [00:00, 410775.98it/s]
+prec/rec/f1: 53.9% 28.8% 0.375
+
+Evaluation of detie666_electra_bs32_imojie_retrain_1 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2549 Opt: (Pr, Re, F1): (0.5869, 0.3213, 0.4152) 0-Conf (Pr, Re, F1): (0.5869, 0.3213, 0.4152)
+carb(s,m)
+AUC: 0.3791 Opt: (Pr, Re, F1): (0.5869, 0.4778, 0.5267) 0-Conf (Pr, Re, F1): (0.5869, 0.4778, 0.5267)
+oie16
+AUC: 0.4105963814464973 Optimal (Pr, Re, F1, thr): (0.8594982078853046, 0.4416206261510129, 0.5834549878345499, 1.0)
+wire57
+0it [00:00, ?it/s]1409it [00:00, 391272.14it/s]
+prec/rec/f1: 50.7% 29.1% 0.370
+
+Evaluation of detie666_electra_bs32_imojie_retrain_2 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2399 Opt: (Pr, Re, F1): (0.6194, 0.2963, 0.4009) 0-Conf (Pr, Re, F1): (0.6194, 0.2963, 0.4009)
+carb(s,m)
+AUC: 0.3624 Opt: (Pr, Re, F1): (0.6194, 0.4476, 0.5197) 0-Conf (Pr, Re, F1): (0.6194, 0.4476, 0.5197)
+oie16
+AUC: 0.3770849991492104 Optimal (Pr, Re, F1, thr): (0.8871627146361406, 0.3996316758747698, 0.5510411376333164, 1.0)
+wire57
+0it [00:00, ?it/s]1236it [00:00, 403373.77it/s]
+prec/rec/f1: 54.4% 27.2% 0.363
+
+Evaluation of detie666_electra_bs32_imojie_retrain_3 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2495 Opt: (Pr, Re, F1): (0.6069, 0.3105, 0.4109) 0-Conf (Pr, Re, F1): (0.6069, 0.3105, 0.4109)
+carb(s,m)
+AUC: 0.3715 Opt: (Pr, Re, F1): (0.6069, 0.4624, 0.5249) 0-Conf (Pr, Re, F1): (0.6069, 0.4624, 0.5249)
+oie16
+AUC: 0.3924190841457302 Optimal (Pr, Re, F1, thr): (0.8707951070336392, 0.41952117863720073, 0.5662440964454387, 1.0)
+wire57
+0it [00:00, ?it/s]1322it [00:00, 404794.12it/s]
+prec/rec/f1: 53.0% 28.4% 0.370
+
+Evaluation of detie666_electra_bs32_imojie_retrain_4 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2439 Opt: (Pr, Re, F1): (0.5998, 0.3049, 0.4043) 0-Conf (Pr, Re, F1): (0.5998, 0.3049, 0.4043)
+carb(s,m)
+AUC: 0.3564 Opt: (Pr, Re, F1): (0.5998, 0.4455, 0.5113) 0-Conf (Pr, Re, F1): (0.5998, 0.4455, 0.5113)
+oie16
+AUC: 0.4005407429205367 Optimal (Pr, Re, F1, thr): (0.8717179294823706, 0.4279926335174954, 0.5741106719367589, 1.0)
+wire57
+0it [00:00, ?it/s]1347it [00:00, 388084.04it/s]
+prec/rec/f1: 52.1% 27.8% 0.362
+
+Evaluation of detie999_electra_bs32_imojieconj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2944 Opt: (Pr, Re, F1): (0.4586, 0.4037, 0.4294) 0-Conf (Pr, Re, F1): (0.4586, 0.4037, 0.4294)
+carb(s,m)
+AUC: 0.3498 Opt: (Pr, Re, F1): (0.4586, 0.4796, 0.4689) 0-Conf (Pr, Re, F1): (0.4586, 0.4796, 0.4689)
+oie16
+AUC: 0.5409471738943096 Optimal (Pr, Re, F1, thr): (0.7339688041594454, 0.6239410681399632, 0.6744973123631297, 1.0)
+wire57
+0it [00:00, ?it/s]2379it [00:00, 455170.57it/s]
+prec/rec/f1: 39.8% 36.5% 0.381
+
+Evaluation of detie666_electra_bs32_imojie_retrain_1conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.3005 Opt: (Pr, Re, F1): (0.444, 0.4162, 0.4296) 0-Conf (Pr, Re, F1): (0.444, 0.4162, 0.4296)
+carb(s,m)
+AUC: 0.3568 Opt: (Pr, Re, F1): (0.444, 0.4942, 0.4678) 0-Conf (Pr, Re, F1): (0.444, 0.4942, 0.4678)
+oie16
+AUC: 0.551073124234854 Optimal (Pr, Re, F1, thr): (0.713818479149632, 0.6430939226519337, 0.6766130594845959, 1.0)
+wire57
+0it [00:00, ?it/s]2506it [00:00, 437955.24it/s]
+prec/rec/f1: 37.9% 37.1% 0.375
+
+Evaluation of detie666_electra_bs32_imojie_retrain_2conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2919 Opt: (Pr, Re, F1): (0.478, 0.395, 0.4325) 0-Conf (Pr, Re, F1): (0.478, 0.395, 0.4325)
+carb(s,m)
+AUC: 0.3497 Opt: (Pr, Re, F1): (0.478, 0.4732, 0.4756) 0-Conf (Pr, Re, F1): (0.478, 0.4732, 0.4756)
+oie16
+AUC: 0.5184286207194735 Optimal (Pr, Re, F1, thr): (0.7484890748489075, 0.5930018416206262, 0.6617344841759145, 1.0)
+wire57
+0it [00:00, ?it/s]2194it [00:00, 453025.30it/s]
+prec/rec/f1: 41.3% 35.4% 0.381
+
+Evaluation of detie666_electra_bs32_imojie_retrain_3conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2974 Opt: (Pr, Re, F1): (0.4639, 0.4063, 0.4332) 0-Conf (Pr, Re, F1): (0.4639, 0.4063, 0.4332)
+carb(s,m)
+AUC: 0.3529 Opt: (Pr, Re, F1): (0.4639, 0.4822, 0.4728) 0-Conf (Pr, Re, F1): (0.4639, 0.4822, 0.4728)
+oie16
+AUC: 0.5341805595941973 Optimal (Pr, Re, F1, thr): (0.7337719298245614, 0.6162062615101289, 0.6698698698698697, 1.0)
+wire57
+0it [00:00, ?it/s]2329it [00:00, 440143.01it/s]
+prec/rec/f1: 40.0% 36.2% 0.380
+
+Evaluation of detie666_electra_bs32_imojie_retrain_4conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2934 Opt: (Pr, Re, F1): (0.4614, 0.4015, 0.4294) 0-Conf (Pr, Re, F1): (0.4614, 0.4015, 0.4294)
+carb(s,m)
+AUC: 0.347 Opt: (Pr, Re, F1): (0.4614, 0.4749, 0.468) 0-Conf (Pr, Re, F1): (0.4614, 0.4749, 0.468)
+oie16
+AUC: 0.5443724508981516 Optimal (Pr, Re, F1, thr): (0.7408376963350786, 0.625414364640884, 0.6782504493708807, 1.0)
+wire57
+0it [00:00, ?it/s]2338it [00:00, 428708.70it/s]
+prec/rec/f1: 39.8% 36.0% 0.378
+
+Evaluation of detie999_deberta_bs32_imojie (ollie format) -------------------
+carb(s,s)
+AUC: 0.0632 Opt: (Pr, Re, F1): (0.6049, 0.0787, 0.1393) 0-Conf (Pr, Re, F1): (0.6049, 0.0787, 0.1393)
+carb(s,m)
+AUC: 0.0913 Opt: (Pr, Re, F1): (0.6049, 0.1138, 0.1916) 0-Conf (Pr, Re, F1): (0.6049, 0.1138, 0.1916)
+oie16
+AUC: 0.11258029554045837 Optimal (Pr, Re, F1, thr): (0.8086124401913876, 0.12449355432780847, 0.21576763485477177, 1.0)
+wire57
+0it [00:00, ?it/s]421it [00:00, 333673.84it/s]
+prec/rec/f1: 50.1% 6.8% 0.119
+
+Evaluation of detie999_deberta_bs32_imojieconj (ollie format) -------------------
+carb(s,s)
+AUC: 0.0775 Opt: (Pr, Re, F1): (0.4825, 0.1045, 0.1718) 0-Conf (Pr, Re, F1): (0.4825, 0.1045, 0.1718)
+carb(s,m)
+AUC: 0.0935 Opt: (Pr, Re, F1): (0.4825, 0.1261, 0.2) 0-Conf (Pr, Re, F1): (0.4825, 0.1261, 0.2)
+oie16
+AUC: 0.16222095273869333 Optimal (Pr, Re, F1, thr): (0.7237960339943342, 0.18821362799263353, 0.29874305758550135, 1.0)
+wire57
+0it [00:00, ?it/s]746it [00:00, 354716.11it/s]
+prec/rec/f1: 39.5% 9.0% 0.146
+
+Evaluation of detie999_debertav3_bs32_imojie (ollie format) -------------------
+carb(s,s)
+AUC: 0.0664 Opt: (Pr, Re, F1): (0.6204, 0.0819, 0.1448) 0-Conf (Pr, Re, F1): (0.6204, 0.0819, 0.1448)
+carb(s,m)
+AUC: 0.0954 Opt: (Pr, Re, F1): (0.6204, 0.1178, 0.198) 0-Conf (Pr, Re, F1): (0.6204, 0.1178, 0.198)
+oie16
+AUC: 0.11233930089247768 Optimal (Pr, Re, F1, thr): (0.8100961538461539, 0.12412523020257826, 0.2152666879591185, 1.0)
+wire57
+0it [00:00, ?it/s]421it [00:00, 331170.66it/s]
+prec/rec/f1: 53.4% 7.2% 0.127
+
+Evaluation of detie999_debertav3_bs32_imojieconj (ollie format) -------------------
+carb(s,s)
+AUC: 0.0808 Opt: (Pr, Re, F1): (0.4937, 0.1082, 0.1775) 0-Conf (Pr, Re, F1): (0.4937, 0.1082, 0.1775)
+carb(s,m)
+AUC: 0.0971 Opt: (Pr, Re, F1): (0.4937, 0.13, 0.2057) 0-Conf (Pr, Re, F1): (0.4937, 0.13, 0.2057)
+oie16
+AUC: 0.16519128923848467 Optimal (Pr, Re, F1, thr): (0.731638418079096, 0.19079189686924494, 0.30265848670756645, 1.0)
+wire57
+0it [00:00, ?it/s]750it [00:00, 388601.36it/s]
+prec/rec/f1: 41.6% 9.3% 0.153
+
+Evaluation of detie999_bert_lsoie (ollie format) -------------------
+carb(s,s)
+AUC: 0.2067 Opt: (Pr, Re, F1): (0.3348, 0.3097, 0.3218) 0-Conf (Pr, Re, F1): (0.3348, 0.3097, 0.3218)
+carb(s,m)
+AUC: 0.2456 Opt: (Pr, Re, F1): (0.3348, 0.3679, 0.3506) 0-Conf (Pr, Re, F1): (0.3348, 0.3679, 0.3506)
+oie16
+AUC: 0.5138289046326661 Optimal (Pr, Re, F1, thr): (0.753671245855045, 0.5860036832412523, 0.6593452134272689, 1.0)
+wire57
+0it [00:00, ?it/s]2135it [00:00, 450195.52it/s]
+prec/rec/f1: 28.8% 27.9% 0.284
+
+Evaluation of detie666_bert_bs32_lsoie_retrain_1 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2054 Opt: (Pr, Re, F1): (0.3481, 0.3047, 0.325) 0-Conf (Pr, Re, F1): (0.3481, 0.3047, 0.325)
+carb(s,m)
+AUC: 0.2428 Opt: (Pr, Re, F1): (0.3481, 0.3602, 0.3541) 0-Conf (Pr, Re, F1): (0.3481, 0.3602, 0.3541)
+oie16
+AUC: 0.48432710556281894 Optimal (Pr, Re, F1, thr): (0.7603053435114504, 0.5502762430939226, 0.6384615384615384, 1.0)
+wire57
+0it [00:00, ?it/s]1993it [00:00, 473853.40it/s]
+prec/rec/f1: 30.5% 27.6% 0.290
+
+Evaluation of detie666_bert_bs32_lsoie_retrain_2 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2024 Opt: (Pr, Re, F1): (0.3547, 0.2988, 0.3244) 0-Conf (Pr, Re, F1): (0.3547, 0.2988, 0.3244)
+carb(s,m)
+AUC: 0.2382 Opt: (Pr, Re, F1): (0.3547, 0.3516, 0.3532) 0-Conf (Pr, Re, F1): (0.3547, 0.3516, 0.3532)
+oie16
+AUC: 0.461427222708694 Optimal (Pr, Re, F1, thr): (0.7423851316468766, 0.5296500920810313, 0.6182287188306104, 1.0)
+wire57
+0it [00:00, ?it/s]1961it [00:00, 413983.80it/s]
+prec/rec/f1: 31.7% 27.7% 0.295
+
+Evaluation of detie666_bert_bs32_lsoie_retrain_3 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2012 Opt: (Pr, Re, F1): (0.3663, 0.2945, 0.3265) 0-Conf (Pr, Re, F1): (0.3663, 0.2945, 0.3265)
+carb(s,m)
+AUC: 0.2377 Opt: (Pr, Re, F1): (0.3663, 0.348, 0.3569) 0-Conf (Pr, Re, F1): (0.3663, 0.348, 0.3569)
+oie16
+AUC: 0.46925316406096934 Optimal (Pr, Re, F1, thr): (0.7670212765957447, 0.5311233885819521, 0.6276387377584332, 1.0)
+wire57
+0it [00:00, ?it/s]1906it [00:00, 434735.08it/s]
+prec/rec/f1: 32.2% 26.9% 0.293
+
+Evaluation of detie666_bert_bs32_lsoie_retrain_4 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2007 Opt: (Pr, Re, F1): (0.3483, 0.2977, 0.3211) 0-Conf (Pr, Re, F1): (0.3483, 0.2977, 0.3211)
+carb(s,m)
+AUC: 0.2389 Opt: (Pr, Re, F1): (0.3483, 0.3543, 0.3513) 0-Conf (Pr, Re, F1): (0.3483, 0.3543, 0.3513)
+oie16
+AUC: 0.4664745815772234 Optimal (Pr, Re, F1, thr): (0.7565582371458552, 0.5311233885819521, 0.6241073360744427, 1.0)
+wire57
+0it [00:00, ?it/s]1933it [00:00, 442095.51it/s]
+prec/rec/f1: 31.0% 27.4% 0.291
+
+Evaluation of detie999_roberta_bs32_lsoie (ollie format) -------------------
+carb(s,s)
+AUC: 0.1906 Opt: (Pr, Re, F1): (0.3621, 0.2798, 0.3157) 0-Conf (Pr, Re, F1): (0.3621, 0.2798, 0.3157)
+carb(s,m)
+AUC: 0.2227 Opt: (Pr, Re, F1): (0.3621, 0.3269, 0.3436) 0-Conf (Pr, Re, F1): (0.3621, 0.3269, 0.3436)
+oie16
+AUC: 0.45107073647782286 Optimal (Pr, Re, F1, thr): (0.7583015786608601, 0.5130755064456722, 0.6120386643233744, 1.0)
+wire57
+0it [00:00, ?it/s]1860it [00:00, 435516.41it/s]
+prec/rec/f1: 31.9% 25.5% 0.283
+
+Evaluation of detie666_roberta_bs32_lsoie_retrain_1 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2064 Opt: (Pr, Re, F1): (0.3561, 0.3045, 0.3283) 0-Conf (Pr, Re, F1): (0.3561, 0.3045, 0.3283)
+carb(s,m)
+AUC: 0.2426 Opt: (Pr, Re, F1): (0.3561, 0.3579, 0.357) 0-Conf (Pr, Re, F1): (0.3561, 0.3579, 0.357)
+oie16
+AUC: 0.47664692827123767 Optimal (Pr, Re, F1, thr): (0.7558974358974359, 0.5429097605893186, 0.6319399785637728, 1.0)
+wire57
+0it [00:00, ?it/s]1972it [00:00, 429916.71it/s]
+prec/rec/f1: 31.4% 27.7% 0.294
+
+Evaluation of detie666_roberta_bs32_lsoie_retrain2 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2077 Opt: (Pr, Re, F1): (0.3522, 0.3072, 0.3282) 0-Conf (Pr, Re, F1): (0.3522, 0.3072, 0.3282)
+carb(s,m)
+AUC: 0.2403 Opt: (Pr, Re, F1): (0.3522, 0.3554, 0.3538) 0-Conf (Pr, Re, F1): (0.3522, 0.3554, 0.3538)
+oie16
+AUC: 0.4788852008657589 Optimal (Pr, Re, F1, thr): (0.7312560856864654, 0.5532228360957643, 0.6299014468442021, 1.0)
+wire57
+0it [00:00, ?it/s]2076it [00:00, 447518.89it/s]
+prec/rec/f1: 31.2% 28.2% 0.296
+
+Evaluation of detie666_roberta_bs32_lsoie_retrain3 (ollie format) -------------------
+carb(s,s)
+AUC: 0.1946 Opt: (Pr, Re, F1): (0.3579, 0.2866, 0.3183) 0-Conf (Pr, Re, F1): (0.3579, 0.2866, 0.3183)
+carb(s,m)
+AUC: 0.2237 Opt: (Pr, Re, F1): (0.3579, 0.3295, 0.3431) 0-Conf (Pr, Re, F1): (0.3579, 0.3295, 0.3431)
+oie16
+AUC: 0.46444521777811015 Optimal (Pr, Re, F1, thr): (0.7501301405517959, 0.5307550644567219, 0.6216566005176877, 1.0)
+wire57
+0it [00:00, ?it/s]1942it [00:00, 445319.47it/s]
+prec/rec/f1: 31.3% 25.7% 0.282
+
+Evaluation of detie666_roberta_bs32_lsoie_retrain4 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2015 Opt: (Pr, Re, F1): (0.3751, 0.2931, 0.3291) 0-Conf (Pr, Re, F1): (0.3751, 0.2931, 0.3291)
+carb(s,m)
+AUC: 0.2416 Opt: (Pr, Re, F1): (0.3751, 0.3514, 0.3629) 0-Conf (Pr, Re, F1): (0.3751, 0.3514, 0.3629)
+oie16
+AUC: 0.4624121957532645 Optimal (Pr, Re, F1, thr): (0.7657512116316639, 0.523756906077348, 0.6220472440944882, 1.0)
+wire57
+0it [00:00, ?it/s]1880it [00:00, 445245.15it/s]
+prec/rec/f1: 33.5% 27.0% 0.299
+
+Evaluation of detie999_electra_bs32_lsoie (ollie format) -------------------
+carb(s,s)
+AUC: 0.2022 Opt: (Pr, Re, F1): (0.3628, 0.2967, 0.3264) 0-Conf (Pr, Re, F1): (0.3628, 0.2967, 0.3264)
+carb(s,m)
+AUC: 0.2419 Opt: (Pr, Re, F1): (0.3628, 0.355, 0.3588) 0-Conf (Pr, Re, F1): (0.3628, 0.355, 0.3588)
+oie16
+AUC: 0.4715129078294782 Optimal (Pr, Re, F1, thr): (0.7488491048593351, 0.5392265193370166, 0.6269807280513919, 1.0)
+wire57
+0it [00:00, ?it/s]1977it [00:00, 451838.44it/s]
+prec/rec/f1: 31.8% 26.8% 0.291
+
+Evaluation of detie666_electra_bs32_lsoie_retrain1 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2009 Opt: (Pr, Re, F1): (0.348, 0.298, 0.3211) 0-Conf (Pr, Re, F1): (0.348, 0.298, 0.3211)
+carb(s,m)
+AUC: 0.2354 Opt: (Pr, Re, F1): (0.348, 0.3493, 0.3486) 0-Conf (Pr, Re, F1): (0.348, 0.3493, 0.3486)
+oie16
+AUC: 0.49506915833663184 Optimal (Pr, Re, F1, thr): (0.7674066599394551, 0.5602209944751381, 0.6476474345326804, 1.0)
+wire57
+0it [00:00, ?it/s]2003it [00:00, 448350.46it/s]
+prec/rec/f1: 30.3% 27.1% 0.286
+
+Evaluation of detie666_electra_bs32_lsoie_retrain2 (ollie format) -------------------
+carb(s,s)
+AUC: 0.209 Opt: (Pr, Re, F1): (0.3334, 0.3134, 0.3231) 0-Conf (Pr, Re, F1): (0.3334, 0.3134, 0.3231)
+carb(s,m)
+AUC: 0.2457 Opt: (Pr, Re, F1): (0.3334, 0.3685, 0.3501) 0-Conf (Pr, Re, F1): (0.3334, 0.3685, 0.3501)
+oie16
+AUC: 0.5117173329716174 Optimal (Pr, Re, F1, thr): (0.7497639282341831, 0.5848987108655617, 0.6571487688806124, 1.0)
+wire57
+0it [00:00, ?it/s]2140it [00:00, 457179.78it/s]
+prec/rec/f1: 29.1% 28.4% 0.288
+
+Evaluation of detie666_electra_bs32_lsoie_retrain3 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2036 Opt: (Pr, Re, F1): (0.3532, 0.3009, 0.325) 0-Conf (Pr, Re, F1): (0.3532, 0.3009, 0.325)
+carb(s,m)
+AUC: 0.244 Opt: (Pr, Re, F1): (0.3532, 0.3607, 0.3569) 0-Conf (Pr, Re, F1): (0.3532, 0.3607, 0.3569)
+oie16
+AUC: 0.4726149562796363 Optimal (Pr, Re, F1, thr): (0.7637795275590551, 0.5359116022099447, 0.6298701298701299, 1.0)
+wire57
+0it [00:00, ?it/s]1927it [00:00, 435992.22it/s]
+prec/rec/f1: 31.8% 28.0% 0.298
+
+Evaluation of detie666_electra_bs32_lsoie_retrain4 (ollie format) -------------------
+carb(s,s)
+AUC: 0.2109 Opt: (Pr, Re, F1): (0.3467, 0.3132, 0.3291) 0-Conf (Pr, Re, F1): (0.3467, 0.3132, 0.3291)
+carb(s,m)
+AUC: 0.2451 Opt: (Pr, Re, F1): (0.3467, 0.364, 0.3551) 0-Conf (Pr, Re, F1): (0.3467, 0.364, 0.3551)
+oie16
+AUC: 0.49395252319648947 Optimal (Pr, Re, F1, thr): (0.7382775119617225, 0.5683241252302026, 0.6422476586888658, 1.0)
+wire57
+0it [00:00, ?it/s]2114it [00:00, 451005.02it/s]
+prec/rec/f1: 30.9% 28.5% 0.297
+
+Evaluation of detie999_bert_lsoieconj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2299 Opt: (Pr, Re, F1): (0.3419, 0.3426, 0.3422) 0-Conf (Pr, Re, F1): (0.3419, 0.3426, 0.3422)
+carb(s,m)
+AUC: 0.2686 Opt: (Pr, Re, F1): (0.3419, 0.4003, 0.3688) 0-Conf (Pr, Re, F1): (0.3419, 0.4003, 0.3688)
+oie16
+AUC: 0.5042176533766516 Optimal (Pr, Re, F1, thr): (0.6643780290791599, 0.6058931860036832, 0.6337892506260835, 1.0)
+wire57
+0it [00:00, ?it/s]2549it [00:00, 445414.36it/s]
+prec/rec/f1: 29.5% 30.6% 0.301
+
+Evaluation of detie666_bert_bs32_lsoie_retrain_1conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2236 Opt: (Pr, Re, F1): (0.3514, 0.3309, 0.3409) 0-Conf (Pr, Re, F1): (0.3514, 0.3309, 0.3409)
+carb(s,m)
+AUC: 0.2598 Opt: (Pr, Re, F1): (0.3514, 0.3845, 0.3672) 0-Conf (Pr, Re, F1): (0.3514, 0.3845, 0.3672)
+oie16
+AUC: 0.49403658938803596 Optimal (Pr, Re, F1, thr): (0.6829477292202228, 0.5871086556169429, 0.6314121608239256, 1.0)
+wire57
+0it [00:00, ?it/s]2412it [00:00, 450229.70it/s]
+prec/rec/f1: 30.7% 29.7% 0.302
+
+Evaluation of detie666_bert_bs32_lsoie_retrain_2conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2281 Opt: (Pr, Re, F1): (0.3697, 0.3331, 0.3504) 0-Conf (Pr, Re, F1): (0.3697, 0.3331, 0.3504)
+carb(s,m)
+AUC: 0.2627 Opt: (Pr, Re, F1): (0.3697, 0.3836, 0.3765) 0-Conf (Pr, Re, F1): (0.3697, 0.3836, 0.3765)
+oie16
+AUC: 0.4920897509492703 Optimal (Pr, Re, F1, thr): (0.6922402455063569, 0.5815837937384899, 0.6321056845476382, 1.0)
+wire57
+0it [00:00, ?it/s]2345it [00:00, 425822.27it/s]
+prec/rec/f1: 32.9% 30.6% 0.317
+
+Evaluation of detie666_bert_bs32_lsoie_retrain_3conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2262 Opt: (Pr, Re, F1): (0.3757, 0.3288, 0.3507) 0-Conf (Pr, Re, F1): (0.3757, 0.3288, 0.3507)
+carb(s,m)
+AUC: 0.263 Opt: (Pr, Re, F1): (0.3757, 0.3824, 0.379) 0-Conf (Pr, Re, F1): (0.3757, 0.3824, 0.379)
+oie16
+AUC: 0.4951611562117444 Optimal (Pr, Re, F1, thr): (0.7049620026821636, 0.5808471454880295, 0.6369143780290792, 1.0)
+wire57
+0it [00:00, ?it/s]2342it [00:00, 433727.48it/s]
+prec/rec/f1: 33.1% 30.1% 0.315
+
+Evaluation of detie666_bert_bs32_lsoie_retrain_4conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2253 Opt: (Pr, Re, F1): (0.3528, 0.3331, 0.3427) 0-Conf (Pr, Re, F1): (0.3528, 0.3331, 0.3427)
+carb(s,m)
+AUC: 0.2615 Opt: (Pr, Re, F1): (0.3528, 0.3867, 0.369) 0-Conf (Pr, Re, F1): (0.3528, 0.3867, 0.369)
+oie16
+AUC: 0.4918309090778577 Optimal (Pr, Re, F1, thr): (0.686011260285838, 0.5834254143646409, 0.6305732484076434, 1.0)
+wire57
+0it [00:00, ?it/s]2423it [00:00, 430025.75it/s]
+prec/rec/f1: 31.3% 30.5% 0.309
+
+Evaluation of detie999_roberta_bs32_lsoieconj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2152 Opt: (Pr, Re, F1): (0.3726, 0.3135, 0.3405) 0-Conf (Pr, Re, F1): (0.3726, 0.3135, 0.3405)
+carb(s,m)
+AUC: 0.2503 Opt: (Pr, Re, F1): (0.3726, 0.3647, 0.3686) 0-Conf (Pr, Re, F1): (0.3726, 0.3647, 0.3686)
+oie16
+AUC: 0.47748287664010114 Optimal (Pr, Re, F1, thr): (0.6990380210719194, 0.5620626151012892, 0.6231114740710494, 1.0)
+wire57
+0it [00:00, ?it/s]2271it [00:00, 453994.78it/s]
+prec/rec/f1: 32.3% 28.2% 0.301
+
+Evaluation of detie666_roberta_bs32_lsoie_retrain_1conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2249 Opt: (Pr, Re, F1): (0.3508, 0.333, 0.3417) 0-Conf (Pr, Re, F1): (0.3508, 0.333, 0.3417)
+carb(s,m)
+AUC: 0.2604 Opt: (Pr, Re, F1): (0.3508, 0.3855, 0.3673) 0-Conf (Pr, Re, F1): (0.3508, 0.3855, 0.3673)
+oie16
+AUC: 0.497228759311522 Optimal (Pr, Re, F1, thr): (0.6717970049916805, 0.5948434622467772, 0.6309826137917562, 1.0)
+wire57
+0it [00:00, ?it/s]2526it [00:00, 445984.67it/s]
+prec/rec/f1: 30.9% 30.3% 0.306
+
+Evaluation of detie666_roberta_bs32_lsoie_retrain2conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2284 Opt: (Pr, Re, F1): (0.3628, 0.3351, 0.3484) 0-Conf (Pr, Re, F1): (0.3628, 0.3351, 0.3484)
+carb(s,m)
+AUC: 0.2607 Opt: (Pr, Re, F1): (0.3628, 0.3826, 0.3725) 0-Conf (Pr, Re, F1): (0.3628, 0.3826, 0.3725)
+oie16
+AUC: 0.49464536024670586 Optimal (Pr, Re, F1, thr): (0.6745164003364171, 0.5907918968692449, 0.6298841547221677, 1.0)
+wire57
+0it [00:00, ?it/s]2470it [00:00, 450823.80it/s]
+prec/rec/f1: 31.7% 30.2% 0.309
+
+Evaluation of detie666_roberta_bs32_lsoie_retrain3conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2161 Opt: (Pr, Re, F1): (0.3733, 0.3147, 0.3415) 0-Conf (Pr, Re, F1): (0.3733, 0.3147, 0.3415)
+carb(s,m)
+AUC: 0.2482 Opt: (Pr, Re, F1): (0.3733, 0.3615, 0.3673) 0-Conf (Pr, Re, F1): (0.3733, 0.3615, 0.3673)
+oie16
+AUC: 0.4671312781480177 Optimal (Pr, Re, F1, thr): (0.6820443238353686, 0.5554327808471455, 0.6122614697523345, 1.0)
+wire57
+0it [00:00, ?it/s]2270it [00:00, 449552.39it/s]
+prec/rec/f1: 32.3% 27.7% 0.298
+
+Evaluation of detie666_roberta_bs32_lsoie_retrain4conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2306 Opt: (Pr, Re, F1): (0.3744, 0.3355, 0.3539) 0-Conf (Pr, Re, F1): (0.3744, 0.3355, 0.3539)
+carb(s,m)
+AUC: 0.2658 Opt: (Pr, Re, F1): (0.3744, 0.3868, 0.3805) 0-Conf (Pr, Re, F1): (0.3744, 0.3868, 0.3805)
+oie16
+AUC: 0.49954266288301685 Optimal (Pr, Re, F1, thr): (0.6932064041540459, 0.5900552486187846, 0.6374850775964983, 1.0)
+wire57
+0it [00:00, ?it/s]2420it [00:00, 460410.76it/s]
+prec/rec/f1: 33.0% 30.1% 0.315
+
+Evaluation of detie999_electra_bs32_lsoieconj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2269 Opt: (Pr, Re, F1): (0.364, 0.3327, 0.3477) 0-Conf (Pr, Re, F1): (0.364, 0.3327, 0.3477)
+carb(s,m)
+AUC: 0.2664 Opt: (Pr, Re, F1): (0.364, 0.3907, 0.3769) 0-Conf (Pr, Re, F1): (0.364, 0.3907, 0.3769)
+oie16
+AUC: 0.4960161366960767 Optimal (Pr, Re, F1, thr): (0.6770657672849916, 0.5915285451197053, 0.6314134067230194, 1.0)
+wire57
+0it [00:00, ?it/s]2465it [00:00, 429537.16it/s]
+prec/rec/f1: 31.9% 29.9% 0.309
+
+Evaluation of detie666_electra_bs32_lsoie_retrain1conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2227 Opt: (Pr, Re, F1): (0.3535, 0.329, 0.3408) 0-Conf (Pr, Re, F1): (0.3535, 0.329, 0.3408)
+carb(s,m)
+AUC: 0.2577 Opt: (Pr, Re, F1): (0.3535, 0.3808, 0.3667) 0-Conf (Pr, Re, F1): (0.3535, 0.3808, 0.3667)
+oie16
+AUC: 0.49707507312317195 Optimal (Pr, Re, F1, thr): (0.6764705882352942, 0.5930018416206262, 0.631992149165849, 1.0)
+wire57
+0it [00:00, ?it/s]2465it [00:00, 457942.13it/s]
+prec/rec/f1: 30.7% 29.8% 0.303
+
+Evaluation of detie666_electra_bs32_lsoie_retrain2conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2358 Opt: (Pr, Re, F1): (0.3426, 0.3512, 0.3469) 0-Conf (Pr, Re, F1): (0.3426, 0.3512, 0.3469)
+carb(s,m)
+AUC: 0.2722 Opt: (Pr, Re, F1): (0.3426, 0.4055, 0.3714) 0-Conf (Pr, Re, F1): (0.3426, 0.4055, 0.3714)
+oie16
+AUC: 0.5352301150210284 Optimal (Pr, Re, F1, thr): (0.6838351822503962, 0.6357274401473296, 0.65890437106318, 1.0)
+wire57
+0it [00:00, ?it/s]2611it [00:00, 442638.85it/s]
+prec/rec/f1: 30.1% 32.0% 0.311
+
+Evaluation of detie666_electra_bs32_lsoie_retrain3conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2282 Opt: (Pr, Re, F1): (0.3597, 0.3357, 0.3473) 0-Conf (Pr, Re, F1): (0.3597, 0.3357, 0.3473)
+carb(s,m)
+AUC: 0.2681 Opt: (Pr, Re, F1): (0.3597, 0.3943, 0.3762) 0-Conf (Pr, Re, F1): (0.3597, 0.3943, 0.3762)
+oie16
+AUC: 0.5004449310417175 Optimal (Pr, Re, F1, thr): (0.6983849847228285, 0.5893186003683242, 0.6392329204954056, 1.0)
+wire57
+0it [00:00, ?it/s]2382it [00:00, 431364.45it/s]
+prec/rec/f1: 32.3% 30.9% 0.316
+
+Evaluation of detie666_electra_bs32_lsoie_retrain4conj (ollie format) -------------------
+carb(s,s)
+AUC: 0.2333 Opt: (Pr, Re, F1): (0.3651, 0.3418, 0.3531) 0-Conf (Pr, Re, F1): (0.3651, 0.3418, 0.3531)
+carb(s,m)
+AUC: 0.272 Opt: (Pr, Re, F1): (0.3651, 0.3985, 0.3811) 0-Conf (Pr, Re, F1): (0.3651, 0.3985, 0.3811)
+oie16
+AUC: 0.504895143937191 Optimal (Pr, Re, F1, thr): (0.6850526315789474, 0.5992633517495396, 0.6392927308447937, 1.0)
+wire57
+0it [00:00, ?it/s]2454it [00:00, 464855.12it/s]
+prec/rec/f1: 32.5% 30.9% 0.317
+
+Evaluation of detie999_deberta_bs32_lsoie (ollie format) -------------------
+carb(s,s)
+AUC: 0.0041 Opt: (Pr, Re, F1): (0.1654, 0.007, 0.0134) 0-Conf (Pr, Re, F1): (0.1654, 0.007, 0.0134)
+carb(s,m)
+AUC: 0.0045 Opt: (Pr, Re, F1): (0.1654, 0.0078, 0.0149) 0-Conf (Pr, Re, F1): (0.1654, 0.0078, 0.0149)
+oie16
+AUC: 0.02789047062144614 Optimal (Pr, Re, F1, thr): (0.6642335766423357, 0.033517495395948435, 0.06381486676016832, 1.0)
+wire57
+0it [00:00, ?it/s]141it [00:00, 214351.89it/s]
+prec/rec/f1: 14.1% 0.6% 0.011
+
+Evaluation of detie999_deberta_bs32_lsoieconj (ollie format) -------------------
+carb(s,s)
+AUC: 0.0045 Opt: (Pr, Re, F1): (0.1711, 0.0077, 0.0148) 0-Conf (Pr, Re, F1): (0.1711, 0.0077, 0.0148)
+carb(s,m)
+AUC: 0.005 Opt: (Pr, Re, F1): (0.1711, 0.0085, 0.0161) 0-Conf (Pr, Re, F1): (0.1711, 0.0085, 0.0161)
+oie16
+AUC: 0.03357686342929146 Optimal (Pr, Re, F1, thr): (0.7039473684210527, 0.03941068139963168, 0.07464248343215905, 1.0)
+wire57
+0it [00:00, ?it/s]155it [00:00, 208037.48it/s]
+prec/rec/f1: 15.3% 0.7% 0.013
+
+Evaluation of detie999_debertav3_bs32_lsoie (ollie format) -------------------
+carb(s,s)
+AUC: 0.0059 Opt: (Pr, Re, F1): (0.2858, 0.0092, 0.0178) 0-Conf (Pr, Re, F1): (0.2858, 0.0092, 0.0178)
+carb(s,m)
+AUC: 0.0065 Opt: (Pr, Re, F1): (0.2858, 0.0102, 0.0196) 0-Conf (Pr, Re, F1): (0.2858, 0.0102, 0.0196)
+oie16
+AUC: 0.02101803075078162 Optimal (Pr, Re, F1, thr): (0.7558139534883721, 0.02394106813996317, 0.04641199571581578, 1.0)
+wire57
+0it [00:00, ?it/s]87it [00:00, 140401.87it/s]
+prec/rec/f1: 26.1% 0.8% 0.016
+
+Evaluation of detie999_debertav3_bs32_lsoie (ollie format) -------------------
+carb(s,s)
+AUC: 0.0059 Opt: (Pr, Re, F1): (0.2858, 0.0092, 0.0178) 0-Conf (Pr, Re, F1): (0.2858, 0.0092, 0.0178)
+carb(s,m)
+AUC: 0.0065 Opt: (Pr, Re, F1): (0.2858, 0.0102, 0.0196) 0-Conf (Pr, Re, F1): (0.2858, 0.0102, 0.0196)
+oie16
+AUC: 0.02101803075078162 Optimal (Pr, Re, F1, thr): (0.7558139534883721, 0.02394106813996317, 0.04641199571581578, 1.0)
+wire57
+0it [00:00, ?it/s]87it [00:00, 137751.77it/s]
+prec/rec/f1: 26.1% 0.8% 0.016
+
+[?2004h(DetIEconda) [01;32mhbeyer@mlserv1[00m:[01;34m~/DetIE/modules/modules/model/evaluation/carb-openie6[00m$ 
