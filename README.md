@@ -4,10 +4,16 @@ This repository contains the measurements and the paper (written in German for [
 
 ![IMoJIE_tests](https://user-images.githubusercontent.com/60894149/211881793-ed820c0a-b338-4017-8299-d7d43e313edd.png)
 
+
+---
+
+
 As the used code is similar to the original code in the [DetIE repo](https://github.com/sberbank-ai/DetIE), only the results are published.
 However, the corresponding German research paper is included as well as this work sets the new state of the art in the area of OIE by simply using newer BERT encoder variants. 
 
-The end results results compared to all recent OIE models looks as follows:
+---
+
+The end results results compared to all recent OIE models look as follows:
 
 ![table_comparison_to_all_oie_models](https://user-images.githubusercontent.com/60894149/211881404-ca23e882-9258-47f6-9641-b2b5875ee793.png)
 
