@@ -1,9 +1,16 @@
 # DetIE-with-ELECTRA
 
-This repository contains the measurements and the paper (written in German for [Jugend forscht](https://www.jugend-forscht.de/)) for replacing the BERT-encoder inside the [DetIE](https://arxiv.org/abs/2206.12514) model with the more effective encoders RoBERTa, ELECTRA, DeBERTa and DeBERTaV3. RoBERTa and ELECTRA improved the results for DetIE significantly for multiple benchmarks and train datasets and provided new state of the art performances for half of the benchmarks while not slowing down extraction speed:
+This repository contains the measurements and the paper (written in German for [Jugend forscht](https://www.jugend-forscht.de/)) for replacing the BERT-encoder inside the [DetIE](https://arxiv.org/abs/2206.12514) model with the more effective encoders RoBERTa, ELECTRA, DeBERTa and DeBERTaV3. RoBERTa and ELECTRA improved the results for DetIE significantly for multiple benchmarks and train datasets and provide new state of the art performances for half of the benchmarks while not slowing down the extraction speed:
 
 ![IMoJIE_tests](https://user-images.githubusercontent.com/60894149/211881793-ed820c0a-b338-4017-8299-d7d43e313edd.png)
 
+---
+
+Another interesting discovery while applying these encoders include the factors of the ease of the task which is determined by the IGL-CA component and the amount of traning data. With it, it could be observed that significant improvements were made for DetIE models with ELECTRA encoders which did not have either to simple tasks or the inability to learn complex hypotactic sentences due to a lack of training data.
+
+This explains why DetIE trained with an IMoJIE dataset and an ELECTRA encoder achieves on average 1.0 F1 and 1.3 AUC more than the precious DetIE model and also only minor improvements are made with an IGL-CA component as it makes the task easier by splitting up every input sentence on conjunction structures.
+
+In contrary, this also explains why DetIE trained with the LSOIE dataset, an ELECTRA encoder and an IGL-CA achieves on average 1.1 F1 and 1.3 AUC more then before as only then the OIE task is comprehensible enough to apply the better language understanding of the ELECTRA encoder. Without an IGL-CA for LSOIE-trained models, only minor improvements are made.
 
 ---
 
@@ -19,10 +26,4 @@ The end results results compared to all recent OIE models look as follows:
 
 ---
 
-DeBERTa and DeBERTaV3 models were found to be harshly worsening the model performance as their pre-trained relative attention does hinder the decoder to predict  even one extraction most of the time. It is hypothesized that the relative embedding of DeBERTa pre-trained on classical NLP data cannot include meaningful relative position information on the OIE task. Instead it would add wrong ot unnecesary information that impaires DetIE.
-
-It was carefully proofen that no incorrect implementation, not the freezing of the 8 bottom encoder layers and not the grid prediction task of DetIE would cause this problem in combination with DeBERTa or DeBERTaV3. DetIE models with DeBERTa encoders were trained with no frozen layers and only 1 and also 5 simoultaneously predicted extraction token labels. Still models with DeBERTa did nearly never yield any extractions, which led to the stated hypothesis.
-
----
-
-
+DeBERTa and DeBERTaV3 models were found to be harshly worsening the model performance but only due to their sharing of the relative embedding matrices across all encoder layers. I am looking forward to update this repository with measurements of the DeBERTa encoders.
