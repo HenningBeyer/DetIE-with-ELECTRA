@@ -28,9 +28,6 @@ The end results results compared to all recent OIE models look as follows:
 
 DeBERTa and DeBERTaV3 encoders were found to be not appliable inside the area of open information extraction, as they do not include the highly needed absolute position embeddings and instead feature a relative position embedding for the input tokens. 
 
-Including these absolute embeddings additionally at the start, before the unfrozen DetIE encoder layers or after the encoder did not change the outcome of the model being unable to extract a sufficient amount of correct extractions. Obviously, an absolute position embedding must be inserted in the first encoder layer to be processed deeply enough alongside the token embeddings which would only be possible with models that were pre-trained on absolute position embeddings.
+Including these absolute embeddings additionally beforeor after the encoder did not change the outcome of the model being unable to extract a sufficient amount of correct extractions. Obviously, an absolute position embedding must be inserted in the first encoder layer to be processed deeply enough alongside the token embeddings which would only be possible with models that were pre-trained on absolute position embeddings.
 
 An error in the own implementation seems unlikely as the NLP pipeline of the DetIE repository code works flexible for all of the encoders and their components: The model input was checked to be correct whereas the printed output probabilities did indicate that the model internals would produce incorrect extractions with this correct input format. Multiple configurations with separate relative embedding matrices for the 8 frozen and 4 unfrozen encoder layers were tried for the DeBERTa encoders which is visible in the deberta scripts (marked with #hbeyer).
-
-
-
