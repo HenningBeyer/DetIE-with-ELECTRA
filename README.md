@@ -6,17 +6,17 @@ This repository contains the measurements and the paper (written in German for [
 
 ---
 
-Another interesting discovery while applying these encoders include the factors of the ease of the task which is determined by the IGL-CA component and the amount of traning data. With it, it could be observed that significant improvements were made for DetIE models with ELECTRA encoders which did not have either to simple tasks or the inability to learn complex hypotactic sentences due to a lack of training data.
+Two important criterias were identified that must be fullfilled to achieve an increased model performance: The language task must be complex enough while there must be also enough train data to adapt the model to the complex task.
 
-This explains why DetIE trained with an IMoJIE dataset and an ELECTRA encoder achieves on average 1.0 F1 and 1.3 AUC more than the precious DetIE model and also only minor improvements are made with an IGL-CA component as it makes the task easier by splitting up every input sentence on conjunction structures.
+This explains why DetIE trained with an IMoJIE dataset (90.000 samples) and an ELECTRA encoder achieves on average 1.0 F1 and 1.3 AUC improvement without an IGL-CA component but close to no improvements with the IGL-CA component, as it simplifies the task by splitting long sentences on coordination structures.
 
-In contrary, this also explains why DetIE trained with the LSOIE dataset, an ELECTRA encoder and an IGL-CA achieves on average 1.1 F1 and 1.3 AUC more then before as only then the OIE task is comprehensible enough to apply the better language understanding of the ELECTRA encoder. Without an IGL-CA for LSOIE-trained models, only minor improvements are made.
+Conversely, DetIE trained with a LSOIE dataset (35.000 samples) and an ELECTRA encoder without an IGL-CA component achieves close to no improvements while it achives
+on average 1.1 F1 and 1.3 AUC improvement with an IGL-CA component that simplifies the input sentences enough allowing the encoders to leverage their language understanding skills.
 
 ---
 
-
-As the used code is similar to the original code in the [DetIE repo](https://github.com/sberbank-ai/DetIE), only the results are published.
-However, the corresponding German research paper is included as well as this work sets the new state of the art in the area of OIE by simply using newer BERT encoder variants. 
+As the used code is similar to the original code in the [DetIE repo](https://github.com/sberbank-ai/DetIE), mainly the results are published.
+However, the corresponding German research paper is included as well as the main model file and the changed DeBERTa model scripts of a custom [Transformers](https://github.com/huggingface/transformers) version.
 
 ---
 
@@ -26,4 +26,11 @@ The end results results compared to all recent OIE models look as follows:
 
 ---
 
-DeBERTa and DeBERTaV3 models were found to be harshly worsening the model performance but only due to their sharing of the relative embedding matrices across all encoder layers. I am looking forward to update this repository with measurements of the DeBERTa encoders.
+DeBERTa and DeBERTaV3 encoders were found to be not appliable inside the area of open information extraction, as they do not include the highly needed absolute position embeddings and instead feature a relative position embedding for the input tokens. 
+
+Including these absolute embeddings additionally at the start, before the unfrozen DetIE encoder layers or after the encoder did not change the outcome of the model being unable to extract a sufficient amount of correct extractions. Obviously, an absolute position embedding must be inserted in the first encoder layer to be processed deeply enough alongside the token embeddings which would only be possible with models that were pre-trained on absolute position embeddings.
+
+An error in the own implementation seems unlikely as the NLP pipeline of the DetIE repository code works flexible for all of the encoders and their components: The model input was checked to be correct whereas the printed output probabilities did indicate that the model internals would produce incorrect extractions with this correct input format. Multiple configurations with separate relative embedding matrices for the 8 frozen and 4 unfrozen encoder layers were tried for the DeBERTa encoders which is visible in the deberta scripts (marked with #hbeyer).
+
+
+
