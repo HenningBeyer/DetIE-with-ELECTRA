@@ -26,8 +26,16 @@ The end results results compared to all recent OIE models look as follows:
 
 ---
 
-DeBERTa and DeBERTaV3 encoders were found to be not appliable inside the area of open information extraction, as they do not include the needed absolute position embeddings and instead feature a relative position embedding for the input tokens. 
+DeBERTa and DeBERTaV3 encoders were found to be not appliable inside the area of open information extraction, as they do not include the needed absolute position embeddings and instead feature a relative position embedding for the input tokens.
 
-Including these absolute embeddings additionally before or after the encoder did not change the outcome of the model being unable to extract a sufficient amount of correct extractions. Obviously, an absolute position embedding must be inserted in the first encoder layer to be processed deeply enough alongside the token embeddings which would only be possible with models that were pre-trained on absolute position embeddings.
+# Outlook for the Future
 
-An error in the own implementation seems unlikely as the NLP pipeline of the DetIE repository code works flexible for all of the encoders and their components: The model input was checked to be correct whereas the printed output probabilities did indicate that the model internals would produce incorrect extractions with a correct input format. Multiple configurations with separate relative embedding matrices for the 8 frozen and 4 unfrozen encoder layers were tried for the DeBERTa encoders which is visible in the deberta scripts (marked with #hbeyer).
+DeBERTa models cannot include any form of absolute position embeddings without disrupting the language processing. Hence, future research for including absolute position embeddings would require a costly pre-training of the DeBERTa models with up to 64 V100 Tesla GPUs.
+
+As these requirements will likely be not fullfillable any time soon, the research inside this repository is halted for now but the idea for potential research are shared below.
+
+## Making DeBERTa models appliable for OIE
+
+A simple concept for solving the issue of missing absolute position embeddings is just to include it at the start and pre-train the model again also with the disentangled attention which would likely complement the absolute position information well, so that even improvements inside the area of NLP can be expected. 
+
+So trying to add the small change of an additional absolute positon embedding would likely profit both the areas of NLP and OIE with improvements or a with new theory on how to handle both types of relative and absolute position embeddings together for processing languages.
