@@ -32,7 +32,7 @@ DeBERTa and DeBERTaV3 encoders were found to be not appliable inside the area of
 
 DeBERTa models cannot include any form of absolute position embeddings without disrupting the language processing. Hence, future research for including absolute position embeddings would require a costly pre-training of the DeBERTa models with up to 64 V100 Tesla GPUs.
 
-As these requirements will likely be not fullfillable any time soon, the research inside this repository is halted for now but the idea for potential research are shared below.
+As these requirements will likely be not fullfillable any time soon, the research inside this repository is halted for now, but the ideas for potential research are shared below.
 
 ## Making DeBERTa models appliable for OIE
 
